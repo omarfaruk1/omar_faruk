@@ -227,16 +227,14 @@
 
 }
 .cardbox_inner a{
-
-
     text-decoration: none;
     background-color: #fff;
     padding: 16px 32px;
     color: #1C82FA;
     border-radius: 8px;
     font-size: 18px;
-    font-weight: 500;  
-    
+    font-weight: 500; 
+    display: inline-block;
 }
 /* end */
 /* footer */
