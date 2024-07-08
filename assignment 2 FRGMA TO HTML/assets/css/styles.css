@@ -5,11 +5,15 @@
     font-family: "Inter", sans-serif;
 }
 
+.bg-blue{
+    background-color: #1C82FA;
+    width: 100%;
+}
+
 .common_width{
     max-width: 1440px;
     margin: 0 auto;
 }
-
 
 /* navbar */
 
@@ -26,10 +30,7 @@
     color: #fff;
     font-size: 18px;
 }
-.bg-blue{
-    background-color: #1C82FA;
-    width: 100%;
-}
+
 
 .nav-links {
     list-style: none;
@@ -225,19 +226,23 @@
     padding: 0px 32px;
 
 }
-.cardbox_inner button{
+.cardbox_inner a{
+
+
+    text-decoration: none;
+    background-color: #fff;
     padding: 16px 32px;
     color: #1C82FA;
-    background-color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    border: none;
     border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;  
+    
 }
 /* end */
 /* footer */
 footer{
     margin-top: 120px;
+    background-color: #1C82FA;
     padding: 80px 140px  24px;
     color: #fff;
 }
