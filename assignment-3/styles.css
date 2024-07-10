@@ -27,7 +27,6 @@ nav, ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* text-align: center; */
 }
 
 ul li{
@@ -68,6 +67,7 @@ span{
     color: #DBB783;
 }
 
+/* hero section */
 .hero_main{
     background-image: url(assets/images/hero_bg.webp);
     width: 1440px;
@@ -163,12 +163,12 @@ p {
 
 .left-btn-box {
     background-color: #B72026;
-    filter: drop-shadow(-1px -1px 0px #e2cb84);
+    filter: drop-shadow(-2px -2px 0px #e2cb84);
 }
 
 .right-btn-box {
     background-color: #0B1315;
-    filter: drop-shadow(1px 1px 0px #e2cb84);
+    filter: drop-shadow(3px 3px 0px #e2cb84);
 }
 .box-wrapper{
     display: flex;
