@@ -410,11 +410,11 @@ p {
     color: #fff;
     padding: 15px 30px;
     border: none;
-    border-radius: 5px;
     font-size: 16px;
     text-decoration: none;
     display: inline-block;
     margin-top: 20px;
+    filter: drop-shadow(5px 5px 0px #e2cb84);
 }
 .gallery-button i {
     margin-right: 10px;
@@ -492,13 +492,17 @@ p {
 }
 .footer-content {
     width: 1440px;
-    margin: 0 auto;
+    margin: 5% 5% auto;
     display: flex;
     justify-content: space-between;
 }
 .footer-column {
     flex: 1;
     padding: 0 20px;
+}
+
+.footer-column-left, .footer-contact{
+    width: 30%;
 }
 .footer-column h2 {
     font-size: 18px;
