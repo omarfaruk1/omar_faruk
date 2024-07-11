@@ -314,5 +314,51 @@ p {
     text-align: center;
     margin-top: 24px;
 }
+/* about us section  start */
 
+.about-text{
+    width: 60%;
+}
 
+.bg-black{
+    background-color: #0B1315;
+    color: #fff;
+}
+
+.about-btn{
+    background-color: #B72026;
+    filter: drop-shadow(5px 5px 0px #e2cb84);
+}
+.about-wrapper{
+    display: flex;
+}
+
+.margin-layer{
+    padding: 160px;
+}
+.about-text h2{
+    padding: 16px 0;
+    font-family: "Playfair Display", serif;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 120%;
+}
+.about-text p{
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: left;
+}
+
+.about-btn-box{
+    margin-top: 48px;
+}
+
+.about-image{
+    margin-left: 60px;
+    filter: drop-shadow(5px 5px 0px #e2cb84);
+}
+.about-image img{
+    width: 450px;
+}
