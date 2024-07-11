@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery Section</title>
+    <style>
+        section {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+        .container {
+            width: 1440px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .container::before, .container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 120px; /* Adjust width as needed */
+            background: url('https://path-to-your-lamp-image.png') no-repeat center top; /* Replace with your image URL */
+            background-size: contain;
+        }
+        .container::before {
+            left: 0;
+        }
+        .container::after {
+            right: 0;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .description {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .button {
+            background-color: #c00;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .button i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<section>
+    <div class="container">
+        <h1 class="title">Our Photo Gallery</h1>
+        <p class="description">Lorem ipsum dolor sit amet consectetur. Scelerisque nunc augue mi id pellentesque. Tempor enim pretium a blandit.</p>
+        <a href="#" class="button">
+            <i class="fab fa-instagram"></i> Visit Our Instagram
+        </a>
+    </div>
+    <!-- Add Font Awesome for the Instagram icon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</section>
+</html>
