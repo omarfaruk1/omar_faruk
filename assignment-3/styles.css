@@ -49,7 +49,7 @@ ul li a{
 
 .header_button{
     margin: 20px 0;
-    filter: drop-shadow(1px 1px 0px #e2cb84);
+    filter: drop-shadow(3px 3px 0px #e2cb84);
     background-color: #b82026;
     padding: 0 10px;
 }
@@ -247,15 +247,19 @@ p {
 }
 .menu-content, .menu-products{
     display: flex;
-    justify-content: space-between;
+}
+.menu-text{
+    width: 80%;
 }
 .menu-items{
     width: 30%;
 }
 
 .menu-btn-box{
-    margin: auto;
-    filter: drop-shadow(1px 1px 0px #e2cb84);
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
 .menu-btn{
