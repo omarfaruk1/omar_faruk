@@ -3,70 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery Section</title>
-    <style>
-        section {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #fff;
-        }
-        .container {
-            width: 1440px;
-            margin: 0 auto;
-            padding: 60px 20px;
-            text-align: center;
-            position: relative;
-        }
-        .container::before, .container::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 120px; /* Adjust width as needed */
-            background: url('https://path-to-your-lamp-image.png') no-repeat center top; /* Replace with your image URL */
-            background-size: contain;
-        }
-        .container::before {
-            left: 0;
-        }
-        .container::after {
-            right: 0;
-        }
-        .title {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .description {
-            font-size: 18px;
-            margin-bottom: 40px;
-        }
-        .button {
-            background-color: #c00;
-            color: #fff;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        .button i {
-            margin-right: 10px;
-        }
-    </style>
+    <title>Maharaja Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<section>
-    <div class="container">
-        <h1 class="title">Our Photo Gallery</h1>
-        <p class="description">Lorem ipsum dolor sit amet consectetur. Scelerisque nunc augue mi id pellentesque. Tempor enim pretium a blandit.</p>
-        <a href="#" class="button">
-            <i class="fab fa-instagram"></i> Visit Our Instagram
-        </a>
-    </div>
-    <!-- Add Font Awesome for the Instagram icon -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</section>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>MAHARAJA</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="order-button">
+                <a href="#">Order Online</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Enjoy Our Food Experience</h2>
+            <p>A Fine Authentic Cuisine</p>
+            <div class="button-group">
+                <a href="#" class="btn">View Menu</a>
+                <a href="#" class="btn">Book A Table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="service">
+                <h3>Order Your Food</h3>
+                <p>Scrumptious food just a click away...</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service">
+                <h3>The Best Chef At Service</h3>
+                <p>The best culinary experience near you</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service">
+                <h3>Delicious Recipe</h3>
+                <p>Think, Choose, Order, Eat, Enjoy and Repeat</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu">
+        <div class="container">
+            <h2>Our Delicious Menu</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quos!</p>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/tandoori-chicken.jpg" alt="Tandoori Chicken">
+                    <h4>Tandoori Chicken</h4>
+                </div>
+                <div class="menu-item">
+                    <img src="images/masala-chicken.jpg" alt="Masala Chicken">
+                    <h4>Masala Chicken</h4>
+                </div>
+                <div class="menu-item">
+                    <img src="images/tandoori-kabab.jpg" alt="Tandoori Kabab">
+                    <h4>Tandoori Kabab</h4>
+                </div>
+            </div>
+            <a href="#" class="btn">See Full Menu</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="container">
+            <div class="about-content">
+                <h2>Authentic Indian & Chinese Cuisine</h2>
+                <p>Welcome to Dim Sum House — Your Premier Destination for Authentic Chinese Cuisine and Dim Sum in Clermont! Discover handcrafted dumplings and traditional dishes that will satisfy your cravings for exquisite Chinese flavors.</p>
+                <a href="#" class="btn">About Us</a>
+            </div>
+            <div class="about-logo">
+                <img src="images/maharaja-logo.png" alt="Maharaja Logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2>Our Photo Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/gallery1.jpg" alt="Gallery Image 1"></div>
+                <div class="gallery-item"><img src="images/gallery2.jpg" alt="Gallery Image 2"></div>
+                <div class="gallery-item"><img src="images/gallery3.jpg" alt="Gallery Image 3"></div>
+                <div class="gallery-item"><img src="images/gallery4.jpg" alt="Gallery Image 4"></div>
+                <div class="gallery-item"><img src="images/gallery5.jpg" alt="Gallery Image 5"></div>
+                <div class="gallery-item"><img src="images/gallery6.jpg" alt="Gallery Image 6"></div>
+            </div>
+            <a href="#" class="btn">Visit Our Instagram</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>MAHARAJA</h3>
+                    <p>Ayamas restaurant group ltd, Indian Non-veg chain restaurant, Company reg: 154977184</p>
+                    <p>Trading as Maharaja of India, one of the oldest and authentic Indian restaurant proudly serving since 1980.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Order Online</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">Offers</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Unsubscribe</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>LOCATION</h3>
+                    <p>First 46 Night Building, Portpool Lane, London, EC1N 7UR</p>
+                    <p>(392) 404-8832</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MAHARAJA OF INDIA. All Rights Reserved. Site by <a href="https://www.nanosoft.co.uk">www.nanosoft.co.uk</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
