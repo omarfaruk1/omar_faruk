@@ -62,6 +62,10 @@ ul li a{
     font-size: 16px;
     font-weight: 500;
 }
+
+.header_button a i{
+    padding-right: 5px;
+}
 span{
     margin-left: 30px;
     color: #DBB783;
