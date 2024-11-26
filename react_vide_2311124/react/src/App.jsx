@@ -1,16 +1,18 @@
-
-import './App.css'
-import ProductCard from './product'
-
+import './App.css';
+import ProductCard from './product';
+import Remote from './Remote';
+import Slider from './slider';
 
 function App() {
-
-
   return (
-  <ProductCard/>
+    <>
 
-)
-  
+      <Slider /> 
+      <ProductCard />
+      <Remote/>
+      
+    </>
+  );
 }
 
-export default App
+export default App;

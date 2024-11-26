@@ -1,0 +1,81 @@
+/* Remote container */
+.remote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    width: 200px;
+    height: 400px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+  }
+  
+  /* Screen section */
+  .remote-screen {
+    background-color: #333;
+    border-radius: 10px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .remote-screen-display {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .remote-screen-display p {
+    margin: 5px 0;
+  }
+  
+  .remote-screen-off {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 10px;
+  }
+  
+  /* Button container */
+  .remote-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Button rows */
+  .button-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  /* Buttons */
+  .remote-button {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 0.9em;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+  
+  .remote-button:active {
+    background-color: #ccc;
+    transform: scale(0.95);
+  }
+  
+  .remote-button:hover {
+    background-color: #d4d4d4;
+  }
+  

@@ -1,93 +1,49 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import './App.css'; 
 
 const images = [
-  { id: 1, src: 'slider1.jpg', alt: 'First Slide' },
-  { id: 2, src: 'slider2.jpg', alt: 'Second Slide' },
-  { id: 3, src: 'slider3.jpg', alt: 'Third Slide' },
+  { id: 1, src: 'product1.webp', alt: 'First Slide' },
+  { id: 2, src: 'product2.webp', alt: 'Second Slide' },
+  { id: 3, src: 'product3.webp', alt: 'Third Slide' },
 ];
 
 export default function Slider() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Function to go to the next slide
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
+  // Function to go to the previous slide
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
+  // Automatic slide functionality
+  useEffect(() => {
+    const interval = setInterval(handleNext, 3000); 
+    return () => clearInterval(interval); 
+  }, []);
+
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: '20px',
-        width: '500px',
-        margin: '0 auto',
-        textAlign: 'center',
-      }}
-    >
-      <div
-        style={{
-          position: 'relative',
-          width: '100%',
-          height: '300px',
-          overflow: 'hidden',
-          borderRadius: '8px',
-          border: '2px solid #ccc',
-        }}
-      >
+    <div className="slider-container">
+      <div className="slider">
         <img
           src={images[currentIndex].src}
           alt={images[currentIndex].alt}
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            transition: 'transform 0.5s ease',
-          }}
+          className="slider-image"
         />
-        <button
-          onClick={handlePrev}
-          style={{
-            position: 'absolute',
-            top: '50%',
-            left: '10px',
-            transform: 'translateY(-50%)',
-            background: 'rgba(0,0,0,0.5)',
-            color: 'white',
-            border: 'none',
-            padding: '10px',
-            cursor: 'pointer',
-            borderRadius: '50%',
-          }}
-        >
+        <button onClick={handlePrev} className="slider-button slider-button-prev">
           &#8592;
         </button>
-        <button
-          onClick={handleNext}
-          style={{
-            position: 'absolute',
-            top: '50%',
-            right: '10px',
-            transform: 'translateY(-50%)',
-            background: 'rgba(0,0,0,0.5)',
-            color: 'white',
-            border: 'none',
-            padding: '10px',
-            cursor: 'pointer',
-            borderRadius: '50%',
-          }}
-        >
+        <button onClick={handleNext} className="slider-button slider-button-next">
           &#8594;
         </button>
       </div>
-      <p>
+      <p className="slider-indicator">
         {currentIndex + 1} / {images.length}
       </p>
     </div>
   );
 }
-
