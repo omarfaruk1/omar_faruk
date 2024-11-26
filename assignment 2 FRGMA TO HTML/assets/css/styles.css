@@ -5,15 +5,11 @@
     font-family: "Inter", sans-serif;
 }
 
-.bg-blue{
-    background-color: #1C82FA;
-    width: 100%;
-}
-
 .common_width{
     max-width: 1440px;
     margin: 0 auto;
 }
+
 
 /* navbar */
 
@@ -30,7 +26,10 @@
     color: #fff;
     font-size: 18px;
 }
-
+.bg-blue{
+    background-color: #1C82FA;
+    width: 100%;
+}
 
 .nav-links {
     list-style: none;
@@ -161,9 +160,8 @@
 
 }
 .about-content button {
-    padding: 20px 30px;
-    font-size: 18px;
-    font-weight: 600;
+    padding: 10px 20px;
+    font-size: 1em;
     cursor: pointer;
     background-color: #fff;
     color: #1C82FA;
@@ -227,21 +225,19 @@
     padding: 0px 32px;
 
 }
-.cardbox_inner a{
-    text-decoration: none;
-    background-color: #fff;
+.cardbox_inner button{
     padding: 16px 32px;
     color: #1C82FA;
-    border-radius: 8px;
+    background-color: #fff;
     font-size: 18px;
-    font-weight: 500; 
-    display: inline-block;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
 }
 /* end */
 /* footer */
 footer{
     margin-top: 120px;
-    background-color: #1C82FA;
     padding: 80px 140px  24px;
     color: #fff;
 }

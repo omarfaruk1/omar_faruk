@@ -5,6 +5,10 @@
 }
 
 body{
+    margin: 0 auto;
+}
+
+.common-width{
     max-width: 1440px;
     margin: 0 auto;
     background-color: #FEFEFE;
@@ -12,11 +16,14 @@ body{
 
 header{
     height: 105px;
+
 }
 
 nav{
     display: flex;
     justify-content: space-between;
+    padding: 0 100px;
+
 }
 
 .nav-link{
@@ -31,6 +38,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
+    color: #15253f;
 }
 
 .logo img{
@@ -71,15 +79,19 @@ nav ul li a{
     margin-bottom: 20px;
     font-size: 64px;
     font-weight: 700;
+    margin: 0 100px;
+    margin-bottom: 30px;
 }
 
 .hero .btn-wrapper {
     display: flex;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
+
 }
 
-.hero .btn {
+ .btn {
     background-color: #fff;
     color: #15253f;
     border: none;
@@ -88,18 +100,77 @@ nav ul li a{
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
     flex-basis: auto;
+
 }
 
-.hero .btn-right{
+.btn-right{
     background-color: #15253f;
     color: #fff;
 }
 
 .hero .btn-left:hover {
     background-color: #15253f;
-    color: #fff;
+    color: red;
 }
 .btn-right:hover{
     background-color: #fff;
+    color: red;
+}
+
+/* end of hero section */
+
+.trusted-companies {
+    text-align: center;
+    margin: 130px;
+}
+
+.trusted-companies p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.trusted-companies .logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.trusted-companies .logos img {
+    max-height: 40px;
+}
+
+.info-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 0 130px;
+    /* flex-wrap: wrap; */
+}
+
+.info-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.info-text {
+    max-width: 600px;
+}
+
+.info-text h2 {
+    font-size: 2rem;
     color: #15253f;
+    margin-bottom: 20px;
+}
+
+.info-text p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.learn-more-btn:hover {
+    outline: 1px solid #15253f;
 }
